@@ -8,9 +8,9 @@ Currently working on **[DreamCV](https://github.com/kenenisamekonnen/DreamCV)** 
 ## 🧠 About Me
 - 💡 I love solving problems with code and creating tools that help people.
 - 🚀 Currently exploring **AI integration** in modern web applications.
-- 💬 Ask me about **Next.js, Node.js, TypeScript, MongoDB, Prisma,** and **OAuth**.
+- 💬 Ask me about **python, Java, Next.js, Node.js, TypeScript, MongoDB, Prisma,** and **OAuth**.
 - 🎯 My goal: To build scalable products that combine **AI**, **cloud**, and **modern web technologies**.
-- 🌱 Currently learning **Cloud Deployment**, **AI APIs**, and **Scalable Architectures**.
+- 🌱 Currently learning **Cloud Deployment**, and **Scalable Architectures**.
 
 ---
 
@@ -20,10 +20,8 @@ Currently working on **[DreamCV](https://github.com/kenenisamekonnen/DreamCV)** 
 🖥️ Next.js • React • TypeScript • Tailwind CSS  
 
 **Backend:**  
-⚙️ Node.js • Express • Prisma • MongoDB • PlanetScale (MySQL)  
-
-**AI & Tools:**  
-🤖 OpenAI API • HuggingFace • LangChain • Resend (Email)  
+⚙️ Node.js • Express • Prisma • MongoDB • PlanetScale (MySQL), Java  
+ 
 
 **Others:**  
 ☁️ Git • REST APIs • Authentication (NextAuth, OAuth) • Docker (learning)
@@ -34,7 +32,7 @@ Currently working on **[DreamCV](https://github.com/kenenisamekonnen/DreamCV)** 
 
 | Project | Description | Stack |
 |----------|--------------|-------|
-| [**DreamCV**](https://github.com/kenenisamekonnen/DreamCV) | AI-powered resume builder & job-matching platform | Next.js, Node.js, Prisma, MongoDB |
+| [**DreamCV**](https://github.com/kenenisamekonnensori/DreamCV) | AI-powered resume builder & job-matching platform | Next.js, Node.js, Prisma, MongoDB |
 | **AI Text-to-Image Generator** | Generate stunning visuals using AI prompts | React, Express, OpenAI |
 | **Resume Scorer API** | AI-based scoring system for resumes | Node.js, Python, OpenAI API |
 
