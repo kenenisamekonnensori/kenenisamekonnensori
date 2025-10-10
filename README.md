@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Kenenisa Mekonnen this my new github account since my prevouse acount which is https://github.com/kenenisamekonnen locked due to 2FA
+## 👋 Hi, I'm Kenenisa Mekonnen this my new github account since my prevouse acount which is https://github.com/kenenisamekonnen locked due to 2FA
 
 I'm a **Full-Stack Developer** passionate about building **AI-powered** and **SaaS products** that make life easier and smarter.  
 Currently working on **[DreamCV](https://github.com/kenenisamekonnen/DreamCV)** — an AI-powered resume builder and job-matching platform.
