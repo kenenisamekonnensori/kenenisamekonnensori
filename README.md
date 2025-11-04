@@ -48,7 +48,7 @@ Currently working on **[DreamCV](https://github.com/kenenisamekonnen/DreamCV)** 
 
 ## 🌐 Connect With Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)]([https://linkedin.com/in/kenenisamekonnen](https://www.linkedin.com/in/kenenisa-mekonnen-03414b34a/))  
-[![Portfolio](https://img.shields.io/badge/Portfolio-000?logo=firefox&logoColor=white)](h[ttps://www.kenenisa.tech](https://www.kenenisa.tech/))  
+[![Portfolio](https://img.shields.io/badge/Portfolio-000?logo=firefox&logoColor=white)](https://www.kenenisa.tech](https://www.kenenisa.tech/))  
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:mekonnenkenenisa2@gmail.com)
 
 ---
