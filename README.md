@@ -40,15 +40,15 @@ Currently working on **[DreamCV](https://github.com/kenenisamekonnen/DreamCV)** 
 
 ## 📈 GitHub Stats
 
-![Kenenisa's GitHub stats](https://github-readme-stats.vercel.app/api?username=kenenisamekonnen&show_icons=true&theme=radical)
+![Kenenisa's GitHub stats](https://github-readme-stats.vercel.app/api?username=kenenisamekonnensori&show_icons=true&theme=radical)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kenenisamekonnen&layout=compact&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kenenisamekonnensori&layout=compact&theme=radical)
 
 ---
 
 ## 🌐 Connect With Me
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)]([https://linkedin.com/in/kenenisamekonnen](https://www.linkedin.com/in/kenenisa-mekonnen-03414b34a/))  
-[![Portfolio](https://img.shields.io/badge/Portfolio-000?logo=firefox&logoColor=white)](https://www.kenenisa.tech](https://www.kenenisa.tech/))  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)]([https://linkedin.com/in/kenenisamekonnen](https://www.linkedin.com/in/kenenisamekonnen/))  
+[![Portfolio](https://img.shields.io/badge/Portfolio-000?logo=firefox&logoColor=white)](https://www.kenenisa.dev](https://www.kenenisa.dev/))  
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:mekonnenkenenisa2@gmail.com)
 
 ---
