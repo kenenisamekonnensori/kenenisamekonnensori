@@ -38,17 +38,26 @@ Currently working on **[DreamCV](https://github.com/kenenisamekonnen/DreamCV)** 
 
 ---
 
+## 📊 GitHub Activity Dashboard
+
+<p align="center">
+  <img src="github-metrics.svg" alt="GitHub Activity Dashboard" width="100%" />
+</p>
+
+> The dashboard above is automatically regenerated every day via the
+> [GitHub Metrics workflow](.github/workflows/metrics.yml) and includes:
+> commits activity, pull-request & issue follow-up ratios, ISO-calendar
+> contribution heatmap, language breakdown, traffic stats, lines added/removed,
+> and notable open-source contributions — collectively approximating a
+> radar-style activity overview.
+
+---
+
 ## 📈 GitHub Stats
 
 ![Kenenisa's GitHub stats](https://github-readme-stats.vercel.app/api?username=kenenisamekonnensori&show_icons=true&theme=radical)
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kenenisamekonnensori&layout=compact&theme=radical)
-
----
-
-## 📊 Contribution Breakdown
-
-![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kenenisamekonnensori&theme=radical)
 
 ---
 

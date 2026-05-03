@@ -1,0 +1,141 @@
+# ============================================================
+# GitHub Profile Metrics Dashboard
+# Generates a rich activity SVG using lowlighter/metrics and
+# commits it back to this repository as github-metrics.svg.
+#
+# NOTE: lowlighter/metrics does not produce a true radar chart
+# out of the box. Instead, the plugins below collectively
+# approximate a radar-style activity breakdown by visualising
+# commits, pull-requests, issues, code-reviews, language
+# distribution, calendar heatmap, and traffic side-by-side.
+# ============================================================
+
+name: GitHub Metrics Dashboard
+
+on:
+  # ── Scheduled run: daily at midnight UTC ──────────────────
+  schedule:
+    - cron: "0 0 * * *"
+
+  # ── Allow manual trigger from the Actions UI ──────────────
+  workflow_dispatch:
+
+jobs:
+  metrics:
+    name: Generate Metrics SVG
+    runs-on: ubuntu-latest
+
+    # Only run on the default branch to avoid duplicate commits
+    if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
+
+    permissions:
+      # Needed to commit the generated SVG back to the repo
+      contents: write
+
+    steps:
+      # ── Generate the metrics SVG ───────────────────────────
+      - name: Generate GitHub Metrics
+        uses: lowlighter/metrics@latest
+        with:
+          # ── Authentication ─────────────────────────────────
+          # GITHUB_TOKEN is automatically provided by GitHub Actions.
+          # For plugins that need extended scopes (traffic, etc.)
+          # you can replace this with a PAT stored as a secret.
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+          # ── Target user ───────────────────────────────────
+          user: kenenisamekonnensori
+
+          # ── Output file ───────────────────────────────────
+          # The SVG is committed to the root of the repository.
+          filename: github-metrics.svg
+
+          # ── Base sections to include ──────────────────────
+          # "header" adds avatar, username and account age.
+          # "activity" and "community" are included in the base.
+          base: header, activity, community, repositories, metadata
+
+          # ── Commit settings ───────────────────────────────
+          # Auto-commit the freshly generated SVG back to the repo.
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_message: "chore: update GitHub metrics dashboard [skip ci]"
+
+          # ── Visual theme ──────────────────────────────────
+          # "dark" gives a rich dark background; swap for any
+          # supported theme (e.g. "light", "tokyo-night", etc.)
+          config_theme: dark
+          config_padding: 10%
+
+          # ──────────────────────────────────────────────────
+          # PLUGIN: Activity
+          # Shows a timeline of recent public activity
+          # (pushes, PRs, issues, comments, reviews …).
+          # This is the closest approximation to the "commits %"
+          # and "code-reviews %" slices of a radar chart.
+          # ──────────────────────────────────────────────────
+          plugin_activity: yes
+          plugin_activity_limit: 10        # last 10 events
+          plugin_activity_days: 30         # within 30 days
+          plugin_activity_filter: all      # all event types
+
+          # ──────────────────────────────────────────────────
+          # PLUGIN: Follow-up (issues & pull-requests)
+          # Displays open/closed/merged ratios for issues and
+          # pull requests — approximates the "issues %" and
+          # "pull requests %" radar segments.
+          # ──────────────────────────────────────────────────
+          plugin_followup: yes
+          plugin_followup_sections: repositories  # analyse own repos
+
+          # ──────────────────────────────────────────────────
+          # PLUGIN: ISO Calendar (contribution heatmap)
+          # Full-year contribution heatmap in ISO-week format.
+          # Visually rich and shows commit density over time.
+          # ──────────────────────────────────────────────────
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year  # show entire year
+
+          # ──────────────────────────────────────────────────
+          # PLUGIN: Languages
+          # Breaks down repository languages by bytes written.
+          # Gives a pie/bar view that resembles a radar segment
+          # for "code contribution by language".
+          # ──────────────────────────────────────────────────
+          plugin_languages: yes
+          plugin_languages_ignored: >-
+            html, css, Dockerfile, Makefile
+          plugin_languages_limit: 8          # top 8 languages
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_sections: most-used
+
+          # ──────────────────────────────────────────────────
+          # PLUGIN: Traffic
+          # Shows repository views and clones over the last 14
+          # days. Requires a PAT with the `repo` scope if you
+          # want private-repo traffic; GITHUB_TOKEN is enough
+          # for public repos.
+          # ──────────────────────────────────────────────────
+          plugin_traffic: yes
+
+          # ──────────────────────────────────────────────────
+          # PLUGIN: Lines
+          # Reports total lines added and removed across all
+          # repositories — a proxy for raw coding output.
+          # ──────────────────────────────────────────────────
+          plugin_lines: yes
+          plugin_lines_sections: base         # additions & deletions
+
+          # ──────────────────────────────────────────────────
+          # PLUGIN: Code Reviews (stars / reactions as proxy)
+          # The `notable` plugin highlights significant
+          # contributions to other repositories, which is the
+          # nearest built-in approximation to "code-reviews %".
+          # For an exact review count, a PAT with `read:discussion`
+          # scope and the `plugin_achievements` plugin can help.
+          # ──────────────────────────────────────────────────
+          plugin_notable: yes
+          plugin_notable_indepth: yes
+
+          # ── Achievements (bonus visual richness) ──────────
+          plugin_achievements: yes
+          plugin_achievements_display: detailed
