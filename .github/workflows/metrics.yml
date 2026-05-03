@@ -103,7 +103,7 @@ jobs:
           # ──────────────────────────────────────────────────
           plugin_languages: yes
           plugin_languages_ignored: >-
-            html, css, dockerfile, makefile
+            html, css, Dockerfile, Makefile
           plugin_languages_limit: 8          # top 8 languages
           plugin_languages_details: bytes-size, percentage
           plugin_languages_sections: most-used
