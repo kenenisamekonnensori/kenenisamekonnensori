@@ -46,6 +46,18 @@ Currently working on **[DreamCV](https://github.com/kenenisamekonnen/DreamCV)** 
 
 ---
 
+## 📊 Contribution Breakdown
+
+![Profile Details](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kenenisamekonnensori&theme=radical)
+
+---
+
+## 🗓️ Activity Graph
+
+[![Kenenisa's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=kenenisamekonnensori&theme=radical)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+---
+
 ## 🌐 Connect With Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)]([https://linkedin.com/in/kenenisamekonnen](https://www.linkedin.com/in/kenenisamekonnen/))  
 [![Portfolio](https://img.shields.io/badge/Portfolio-000?logo=firefox&logoColor=white)](https://www.kenenisa.dev](https://www.kenenisa.dev/))  
