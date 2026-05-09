@@ -39,10 +39,9 @@ Currently working on **[DreamCV](https://github.com/kenenisamekonnen/DreamCV)** 
 ---
 
 ## 📊 GitHub Activity Dashboard
-
-<p align="center">
+<!-- <p align="center">
   <img src="github-metrics.svg" alt="GitHub Activity Dashboard" width="100%" />
-</p>
+</p> -->
 
 > The dashboard above is automatically regenerated every day via the
 > [GitHub Metrics workflow](.github/workflows/metrics.yml) and includes:
